@@ -13,7 +13,7 @@ class DisjointSet {
 
     int findUPar(int node) {
       if(parent[node] == node) {
-         return node;
+        return node;
       }
       return parent[node] = findUPar(parent[node]);
     }
